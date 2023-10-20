@@ -1,7 +1,5 @@
 #!/usr/bin/env node
-
-const { Command } = require('commander');
-const program = new Command();
+import { program } from "commander";
 
 program
   .name('string-util')
@@ -13,10 +11,7 @@ program.command('split')
   .argument('<string>', 'string to split')
   .option('--first', 'display just the first substring')
   .option('-s, --separator <char>', 'separator character', ',')
-  .action((str, options) => {
-    const limit = options.first ? 1 : undefined;
-    console.log(str.split(options.separator, limit));
-  });
+  .action('privet');
 
 program.parse();
 
