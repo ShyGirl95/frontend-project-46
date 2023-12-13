@@ -8,7 +8,7 @@ fix-lint:
 	npx eslint --fix .
 
 run:
-	node bin/gendiff __fixtures__/file.1json __fixtures__/file2.json
+	node gendiff __fixtures__/file.1json __fixtures__/file2.json
 
 test:
 	npm test
