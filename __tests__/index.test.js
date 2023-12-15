@@ -1,7 +1,7 @@
 import { fileURLToPath } from 'url';
 import path from 'path';
 import fs from 'fs';
-import { describe, test, expect } from '@jest/globals';
+import { describe, test, expect } from '@jest/globals'; //eslint-disable-line
 import genDiff from '../src/index.js';
 
 const __filename = fileURLToPath(import.meta.url);
